@@ -29,7 +29,7 @@
         //注册事件
         initAlertBox: function () {
             var _this = this;
-            _this.$this.css({ height: 'auto', left: 200 });
+            _this.$this.css({ height: 'auto'});
             _this.$this.append('<div class="odk-ui-alertbox-action"><input type="button" value="确认" class="odk-ui-alertbox-ok"/><input type="button" value="取消" class="odk-ui-alertbox-cancel" /></div>');
             _this.bindAlertBoxEvent();
         }

@@ -25,6 +25,7 @@
         autoRender: true
         , title: '这是一个窗体'
         , content: '这是内容'
+        , appendTo:'body'
     };
     //扩展方法
     var fn = {
@@ -42,7 +43,7 @@
         , render: function () {
             var _this = this;
             var h = templete.getBox(_this.opts);
-            _this.$this = $(h).appendTo(document.body);
+            _this.$this = $(h).appendTo($(_this.opts.appendTo));
             //....
         }
         //注册事件
