@@ -36,20 +36,24 @@
                 demo1:box组件的一个实例</h3>
             <div class="demo" style="height: 150px;">                
                 <script>
-                    var box1 = new ODK.UI.Box({ title: 'box',appendTo:'.demo:first' });
+                    $(function () {
+                        var box1 = new ODK.UI.Box({ title: 'box', appendTo: '.demo:first' });
+                    });
                 </script>
             </div>
             <h3>
                 demo2:继承至box的一个实例</h3>
             <div class="demo" style="height: 150px">               
                 <script>
-                    var box2 = new ODK.UI.AlertBox({
-                        title: '继承至box'
+                    $(function () {
+                        var box2 = new ODK.UI.AlertBox({
+                            title: '继承至box'
                         , onOK: function () {
                             alert('点击了确认');
                             box2.hide();
                         }
-                        ,appendTo:'.demo:last' 
+                        , appendTo: '.demo:last'
+                        });
                     });
                 </script>
             </div>
